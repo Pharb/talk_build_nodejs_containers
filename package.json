@@ -12,6 +12,5 @@
   "repository": "https://github.com/Pharb/talk_build_nodejs_containers",
   "license": "MIT",
   "dependencies": {},
-  "main": "index.js",
-  "keywords": []
+  "main": "index.js"
 }
