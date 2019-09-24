@@ -13,7 +13,22 @@ After demonstrating their usage, we give guidance for selecting the right tool â
 
 ## Examples
 
-[Work-in-progress]
+Here are some different ways to build the same Dockerfile with different tools.
+
+### [docker-build-and-run.sh](docker-build-and-run.sh)
+
+Build Docker image using Docker daemon.
+Some best practises are applied and explained, but the build process might not be as secure as desired.
+
+### [docker-buildx-and-run.sh](docker-buildx-and-run.sh)
+
+Use experimental BuildKit integration in Docker CLI version 19.03 to build Dockerfile.
+
+### [makisu-build.sh](makisu-build.sh)
+
+Use Makisu to build Dockerfile within an unprivileged container for better isolation and security.
+
+Exporting the resulting image would require setting up a separate remote image registry to push the image.
 
 ## Help and Support
 
