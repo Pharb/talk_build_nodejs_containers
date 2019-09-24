@@ -13,7 +13,7 @@ After demonstrating their usage, we give guidance for selecting the right tool â
 
 ## Examples
 
-Here are some different ways to build the same Dockerfile with different tools.
+Here are some different ways to build the same Node.js example app with different tools.
 
 ### [docker-build-and-run.sh](docker-build-and-run.sh)
 
@@ -29,6 +29,12 @@ Use experimental BuildKit integration in Docker CLI version 19.03 to build Docke
 Use Makisu to build Dockerfile within an unprivileged container for better isolation and security.
 
 Exporting the resulting image would require setting up a separate remote image registry to push the image.
+
+### [pack-build-and-run.sh](pack-build-and-run.sh)
+
+Let `pack` create a Docker image by using a matching Cloud Native Buildpack.
+
+The Dockerfile is not used here.
 
 ## Help and Support
 
