@@ -3,14 +3,17 @@
   "version": "0.1.0",
   "description": "Example for Node.js containers",
   "scripts": {
-    "setup": "git clone git://github.com/expressjs/express.git --depth 1 && cd express && npm install",
-    "test": "cd express && npm test",
+    "lock": "npm run git-clone && npm install && npm run clean",
+    "git-clone": "git clone git://github.com/expressjs/express.git --depth 1",
     "start": "node express/examples/markdown",
-    "clean": "rm -rf ./express"
+    "clean": "rm -rf ./express ./node_modules"
   },
   "author": "Patrick Harböck",
   "repository": "https://github.com/Pharb/talk_build_nodejs_containers",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "express": "file:express",
+    "marked": "^0.7.0"
+  },
   "main": "index.js"
 }
