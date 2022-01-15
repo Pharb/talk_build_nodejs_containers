@@ -13,7 +13,7 @@
   "license": "MIT",
   "dependencies": {
     "express": "file:express",
-    "marked": "^0.7.0"
+    "marked": "^4.0.10"
   },
   "main": "index.js"
 }
